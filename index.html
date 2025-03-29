@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Silly story generator</title>
+
+    <style>
+      body {
+        font-family: helvetica, sans-serif;
+       
+      }
+
+      label {
+        font-weight: bold;
+      }
+
+
+
+      input[type="text"] {
+        padding: 5px;
+        width: 150px;
+      }
+      
+
+      p {
+        background: #46077e;
+        color: #e5cbed;
+        padding: 10px;
+        visibility: hidden;
+        text-align: center;
+        width: 30%;
+        margin: auto;
+        margin-top: 30px;
+        border-radius: 10px;
+        
+
+      }
+      .big{
+        background-color: rgb(205, 151, 225);
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0px 10px 10px 5px rgb(156, 165, 181);
+        width: 30%;
+        margin: auto;
+        margin-top: 50px;
+      
+        
+      }
+      .first{
+        padding: 10px;
+      }
+      .second{
+        padding: 10px;
+      }
+      button{
+        padding: 4px;
+        border-radius: 5px;
+        color: rgb(166, 74, 216);
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="big">
+    <div class="first">
+      <label for="customname">Your name:</label>
+      <input id="customname" type="text" placeholder="" />
+    </div>
+    <div class="second">
+      <label for="us">US</label
+      ><input id="us" type="radio" name="ukus" value="us" checked />
+      <label for="uk">UK</label
+      ><input id="uk" type="radio" name="ukus" value="uk" />
+    </div>
+    <div class="third">
+      <button class="randomize">See your story!</button>
+    </div>
+  </div>
+   
+    <p class="story"></p>
+    <script src="main.js"></script>
+  </body>
+</html>
